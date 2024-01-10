@@ -503,7 +503,7 @@ h3{
     }
 
     .creator-col {
-        margin-left: 0; /* Reset left margin to remove space */
+        margin-left: 7px; /* Reset left margin to remove space */
         margin-bottom: 20px; /* Adjust margin for space between cards */
     }
 
