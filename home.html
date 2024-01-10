@@ -45,6 +45,45 @@
         .dropbtn{
             font-weight: bold;
         }
+        /* Styles for the custom dropdown */
+.custom-dropbtn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.custom-dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.custom-dropdown-content a:hover {
+    background-color: #f9f9f9;
+}
+
+.show {
+    display: block;
+}
+
 </style>
 
 
@@ -63,9 +102,9 @@
         <i class="fa fa-times" onclick="hidemenu()"></i>
 
         <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="#intro">ABOUT</a></li>
-            <li><a href="#create">EVENTS</a></li>
+            <li class="menu hide-mobile"><a href="home.html">HOME</a></li>
+            <li class="menu hide-mobile"><a href="#intro">ABOUT</a></li>
+            <li class="menu hide-mobile"><a href="#create">EVENTS</a></li>
             <li class="dropdown" onclick="toggleDropdown()">
                 <span class="dropbtn">REGISTER</span>
                 <div class="dropdown-content" id="registerDropdown">
@@ -77,7 +116,7 @@
         </ul>
         
     </div>
-    <a style="text-decoration: none" href="#con"><button class="btn">CONTACT US</button></a>
+    <a style="text-decoration: none" href="#con"><button class="btn2">CONTACT US</button></a>
 
 </nav>
 <div class="text-box">
@@ -190,16 +229,24 @@
         
     </div>
     <br>
+    <h2>VIEW DETAILS</h2><br>
     <div class="details">
-        <a style="text-decoration: none" href="event2.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
-        <a style="text-decoration: none" href="event3.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
-        <a style="text-decoration: none" href="event4.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
-        <a style="text-decoration: none" href="event1.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
-        <a style="text-decoration: none" href="interdean.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
-
-
+        
+        <a style="text-decoration: none" href="event2.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; Art</button></a>
+        <a style="text-decoration: none" href="event3.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; Stage</button></a>
+        <a style="text-decoration: none" href="event4.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; Literary </button></a>
+        <a style="text-decoration: none" href="event1.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; Theatre</button></a>
+        <a style="text-decoration: none" href="interdean.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; Showdown</button></a>
     </div>
-<center><img src="c1.png" style="border:3px solid black;"></center>
+    <div class="custom-dropdown">
+        <button onclick="toggleDropdown1()" class="custom-dropbtn">Register ▼</button>
+        <div id="customRegisterDropdown" class="custom-dropdown-content">
+            <a href="https://forms.gle/QGWf2RxKK7Gujjys5">UG REGISTRATION</a>
+            <a href="https://forms.gle/hA144T6tiDFi6tz1A">PG REGISTRATION</a>
+        </div>
+    </div>
+<br><br><br>    
+<center><img src="c1.png" style="border:3px solid black;" id="centeredImage"></center>
     </section>
 
 
@@ -211,87 +258,87 @@
         <br>
         <center><h4 style="font-size: 20px;">STUDENT CO-ORDINATORS</h4></center>
 <br>
-        <div class="contact">
-            <div class="box">
-                <p>ART</p>
-                <div>
-                    <i class="fa fa-id-card"></i>  
-                    <span>
-                        <h5>Ajsal Ashraf&nbsp;&nbsp;6EMS<br><a href="https://wa.me/8588838474">+91 8089299700</a></h5>
-                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ajsal.ashraf@ems.christuniversity.in</a></p>
-                    </span>
-                    <i class="fa fa-id-card"></i>
-                    <span>
-                        <h5>Vignesh Narayanan&nbsp;&nbsp;4EMS<br><a href="https://wa.me/8588838474">+91 9994949377</a></h5>
-                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">vignesh.narayanan@ems.christuniversity.in</a></p>
-                    </span>
-                </div>
+<div class="contact">
+    <div class="box">
+        <p>OVERALL</p>
+        <div>
+            <i class="fa fa-id-card"></i>  
+            <span>
+                <h5>Prithika Narayanan&nbsp;&nbsp; 4CMS<br><a href="https://wa.me/8588838474">+91 9655444295</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">prithika.narayanan@cms.christuniversity.in</a></p>
+            </span>
+            <i class="fa fa-id-card"></i>  
+            <span>
+                <h5>Manasa S&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 8310754413</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">manasa.s@cbz.christuniversity.in</a></p>
+            </span>
+        </div>
+        
+    </div>
+    <div class="box">
+       <p>STAGE</p> 
+        <div>
+            <i class="fa fa-id-card"></i>  
+            <span>
+                <h5>Ahlada Sriya&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9686696342</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ahlada.dharanipragada@bcb.christuniversity.in</a></p>
+            </span>
+            <i class="fa fa-id-card"></i>  
+            <span>
+                <h5>Mary Jestina C&nbsp;&nbsp;4PCM<br><a href="https://wa.me/8588838474">+91 8951995205</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">mary.c@pcm.christuniversity.in</a></p>
+            </span>
+        </div>
+    </div>
+    <div class="box">
+        <p>THEATRE</p>
+        <div>
+            <i class="fa fa-id-card"></i>  
+            <span>
+                <h5>Pooja Prasad&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 7349448719</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">pooja.prasad@cbz.christuniversity.in</a></p>
+            </span>
+            <i class="fa fa-id-card"></i>  
+            <span>
+                <h5>Bhuvaneshwari G M&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9141026778</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">bhuvaneshwari.gm@bcb.christuniversity.in</a></p>
+            </span>
+        </div>
+    </div>
+    </div>
+    <div class="contact">
+  
+        <div class="box">
+            <p>LITERARY</p>
+            <div>
+                <i class="fa fa-id-card"></i>  
+                <span>
+                    <h5>Phinehas Porpatham&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9962700738</a></h5>
+                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">phinehas.porpatham@cmschristuniversity.in</a></p>
+                </span>
+                <i class="fa fa-id-card"></i>  
+                <span>
+                    <h5>Dion Ajit&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9061391171</a></h5>
+                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">dion.ajit@cms.christuniversity.in</a></p>
+                </span>
             </div>
-            <div class="box">
-               <p>STAGE</p> 
-                <div>
-                    <i class="fa fa-id-card"></i>  
-                    <span>
-                        <h5>Ahlada Sriya&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9686696342</a></h5>
-                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ahlada.dharanipragada@bcb.christuniversity.in</a></p>
-                    </span>
-                    <i class="fa fa-id-card"></i>  
-                    <span>
-                        <h5>Mary Jestina C&nbsp;&nbsp;4PCM<br><a href="https://wa.me/8588838474">+91 8951995205</a></h5>
-                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">mary.c@pcm.christuniversity.in</a></p>
-                    </span>
-                </div>
+        </div>
+        <div class="box">
+            <p>ART</p>
+            <div>
+                <i class="fa fa-id-card"></i>  
+                <span>
+                    <h5>Ajsal Ashraf&nbsp;&nbsp;6EMS<br><a href="https://wa.me/8588838474">+91 8089299700</a></h5>
+                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ajsal.ashraf@ems.christuniversity.in</a></p>
+                </span>
+                <i class="fa fa-id-card"></i>
+                <span>
+                    <h5>Vignesh Narayanan&nbsp;&nbsp;4EMS<br><a href="https://wa.me/8588838474">+91 9994949377</a></h5>
+                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">vignesh.narayanan@ems.christuniversity.in</a></p>
+                </span>
             </div>
-            <div class="box">
-                <p>THEATRE</p>
-                <div>
-                    <i class="fa fa-id-card"></i>  
-                    <span>
-                        <h5>Pooja Prasad&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 7349448719</a></h5>
-                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">pooja.prasad@cbz.christuniversity.in</a></p>
-                    </span>
-                    <i class="fa fa-id-card"></i>  
-                    <span>
-                        <h5>Bhuvaneshwari G M&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9141026778</a></h5>
-                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">bhuvaneshwari.gm@bcb.christuniversity.in</a></p>
-                    </span>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-          
-                <div class="box">
-                    <p>LITERARY</p>
-                    <div>
-                        <i class="fa fa-id-card"></i>  
-                        <span>
-                            <h5>Phinehas Porpatham&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9962700738</a></h5>
-                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">phinehas.porpatham@cmschristuniversity.in</a></p>
-                        </span>
-                        <i class="fa fa-id-card"></i>  
-                        <span>
-                            <h5>Dion Ajit&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9061391171</a></h5>
-                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">dion.ajit@cms.christuniversity.in</a></p>
-                        </span>
-                    </div>
-                </div>
-                <div class="box">
-                    <p>OVERALL</p>
-                    <div>
-                        <i class="fa fa-id-card"></i>  
-                        <span>
-                            <h5>Prithika Narayanan&nbsp;&nbsp; 4CMS<br><a href="https://wa.me/8588838474">+91 9655444295</a></h5>
-                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">prithika.narayanan@cms.christuniversity.in</a></p>
-                        </span>
-                        <i class="fa fa-id-card"></i>  
-                        <span>
-                            <h5>Manasa S&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 8310754413</a></h5>
-                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">manasa.s@cbz.christuniversity.in</a></p>
-                        </span>
-                    </div>
-                </div>
-                </div>
-            
+        </div>
+        </div>
             
         </div></section>
 
@@ -346,30 +393,52 @@ function formatNumber(num) {
     },1000);
 
     function toggleMenu() {
-        var navLinks = document.getElementById("navLinks");
-        if (navLinks.style.display === "block") {
-            navLinks.style.display = "none";
-        } else {
-            navLinks.style.display = "block";
-        }
+    var navLinks = document.getElementById("navLinks");
+    if (navLinks.style.display === "block") {
+        navLinks.style.display = "none";
+    } else {
+        navLinks.style.display = "block";
     }
+}
 
-    function toggleDropdown() {
-        var dropdownContent = document.getElementById("registerDropdown");
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("registerDropdown");
+    dropdownContent.classList.toggle("show");
+}
+
+function closeDropdown() {
+    var dropdownContent = document.getElementById("registerDropdown");
+    dropdownContent.classList.remove("show");
+}
+
+document.addEventListener('click', function(e) {
+    var dropdown = document.querySelector('.dropdown');
+    if (!dropdown.contains(e.target)) {
+        closeDropdown();
     }
+});
 
-    document.addEventListener('click', function(e) {
-        var dropdown = document.getElementsByClassName('dropdown')[0];
-        if (!dropdown.contains(e.target)) {
-            var dropdownContent = document.getElementById("registerDropdown");
-            dropdownContent.style.display = "none";
-        }
-    });
+// Close dropdown on window resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth < 470 || window.innerHeight < 695) {
+        closeDropdown();
+    }
+});
+
+function toggleDropdown1() {
+    var dropdownContent = document.getElementById("customRegisterDropdown");
+    dropdownContent.classList.toggle("show");
+}
+
+document.addEventListener('click', function(e) {
+    var dropdown = document.querySelector('.custom-dropdown');
+    if (!dropdown.contains(e.target)) {
+        var dropdownContent = document.getElementById("customRegisterDropdown");
+        dropdownContent.classList.remove("show");
+    }
+});
+
+
 
 </script>
 
