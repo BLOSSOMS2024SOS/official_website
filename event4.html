@@ -192,7 +192,7 @@ text-align:right;
     font-weight: 600;
 }
 .footer p{
-    font-size: 12px;
+    font-size: 11px;
     color: #000000;
 }
 .icons .fa{
@@ -211,7 +211,7 @@ text-align:right;
     justify-content: center;
 }
 .name p{
-    font-size: 15px;
+    font-size: 16px;
     font-family: Poppins;
 }
 /*----features----*/
@@ -257,6 +257,24 @@ h2{
     box-sizing: border-box;
     transition:1s;
 }
+.row1{
+margin-left: 425px; 
+display:flex;
+
+}
+.feature-col1{
+    text-align:center;
+    background: linear-gradient(rgba(255, 255, 255, 0.219),rgba(67, 65, 65, 0.263)),url(bgg6.jpg);
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    transition:1s;
+}
+.feature-col1:hover{
+box-shadow:0 0 20px 5px rgba(0,0,0,0.5);
+transform: translateY(-20px);
+}
 h3{
     text-align:center;
     font-weight:600;
@@ -285,24 +303,6 @@ transform: translateY(-20px);
     cursor:pointer;
     justify-content:space-between;
 }
-.row1{
-margin-left: 425px; 
-display:flex;
-
-}
-.feature-col1{
-    text-align:center;
-    background: linear-gradient(rgba(255, 255, 255, 0.219),rgba(67, 65, 65, 0.263)),url(bgg6.jpg);
-    border-radius:10px;
-    margin-bottom: 5%;
-    padding: 20px 50px;
-    box-sizing: border-box;
-    transition:1s;
-}
-.feature-col1:hover{
-box-shadow:0 0 20px 5px rgba(0,0,0,0.5);
-transform: translateY(-20px);
-}
 .rule{
     border: 3px solid black;
     margin-left: 20px;
@@ -327,7 +327,6 @@ li {
   font-family: 'Poppins', sans-serif; 
   font-size: 14px;
 }
-
 .contact-us{
     width:80%;
     margin:auto;
@@ -407,6 +406,51 @@ h4{
     border-radius: 20px;
     border: 2px solid black;
     width:450px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  /* Adjust layout for cards */
+  .row {
+    flex-direction: column;
+  }
+
+  .feature-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Adjust layout for contact boxes */
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 767px) {
+    .row1 {
+    flex-direction: column;
+    margin-left:10px;
+  }  
+  .feature-col1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .h4{
+    text-align:center;
+    font-weight:200;
+    color:#090909;
+    font-family: Bungee Shade;
+    background-color: #fbf9f9;
+    border-radius: 30px;
+    border: 21px solid black;
+    width:150px;
+    font-size:5px;
+  }
 }
     </style>
 </head>
@@ -503,19 +547,20 @@ h4{
 
 <div class="contact">
     <div class="box">
-        <p>ART</p>
+        <p>OVERALL</p>
         <div>
             <i class="fa fa-id-card"></i>  
             <span>
-                <h5>Ajsal Ashraf&nbsp;&nbsp;6EMS<br><a href="https://wa.me/8588838474">+91 8089299700</a></h5>
-                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ajsal.ashraf@ems.christuniversity.in</a></p>
+                <h5>Prithika Narayanan&nbsp;&nbsp; 4CMS<br><a href="https://wa.me/8588838474">+91 9655444295</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">prithika.narayanan@cms.christuniversity.in</a></p>
             </span>
-            <i class="fa fa-id-card"></i>
+            <i class="fa fa-id-card"></i>  
             <span>
-                <h5>Vignesh Narayanan&nbsp;&nbsp;4EMS<br><a href="https://wa.me/8588838474">+91 9994949377</a></h5>
-                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">vignesh.narayanan@ems.christuniversity.in</a></p>
+                <h5>Manasa S&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 8310754413</a></h5>
+                <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">manasa.s@cbz.christuniversity.in</a></p>
             </span>
         </div>
+        
     </div>
     <div class="box">
        <p>STAGE</p> 
@@ -566,23 +611,21 @@ h4{
             </div>
         </div>
         <div class="box">
-            <p>OVERALL</p>
+            <p>ART</p>
             <div>
                 <i class="fa fa-id-card"></i>  
                 <span>
-                    <h5>Prithika Narayanan&nbsp;&nbsp; 4CMS<br><a href="https://wa.me/8588838474">+91 9655444295</a></h5>
-                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">prithika.narayanan@cms.christuniversity.in</a></p>
+                    <h5>Ajsal Ashraf&nbsp;&nbsp;6EMS<br><a href="https://wa.me/8588838474">+91 8089299700</a></h5>
+                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ajsal.ashraf@ems.christuniversity.in</a></p>
                 </span>
-                <i class="fa fa-id-card"></i>  
+                <i class="fa fa-id-card"></i>
                 <span>
-                    <h5>Manasa S&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 8310754413</a></h5>
-                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">manasa.s@cbz.christuniversity.in</a></p>
+                    <h5>Vignesh Narayanan&nbsp;&nbsp;4EMS<br><a href="https://wa.me/8588838474">+91 9994949377</a></h5>
+                    <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">vignesh.narayanan@ems.christuniversity.in</a></p>
                 </span>
             </div>
         </div>
         </div>
-    
-    
 
 
     <section class="footer">
