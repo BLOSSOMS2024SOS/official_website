@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossoms Scool of Sciences</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropbtn{
+            font-weight: bold;
+        }
+</style>
+
+
+
+</head>
+
+
+<body>
+
+   <section class="header">
+   
+    <nav>
+      
+    <a href="index.html"><img src="l.png" class="logo"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#intro">ABOUT</a></li>
+            <li><a href="#create">EVENTS</a></li>
+            <li class="dropdown" onclick="toggleDropdown()">
+                <span class="dropbtn">REGISTER</span>
+                <div class="dropdown-content" id="registerDropdown">
+                    <a href="https://forms.gle/QGWf2RxKK7Gujjys5">UG REGISTRATION</a>
+                    <a href="https://forms.gle/hA144T6tiDFi6tz1A">PG REGISTRATION</a>
+                </div>
+            </li>
+            
+        </ul>
+        
+    </div>
+    <a style="text-decoration: none" href="#con"><button class="btn">CONTACT US</button></a>
+
+</nav>
+<div class="text-box">
+    <br>
+    <br>
+    <br>
+    <br>
+
+<h1>BLOSSOMS 2024-25</h1>
+<p style="text-shadow: -2px -2px 2px white,0 5px 10px rgba(207, 25, 119, 0.767);">by</p>
+<h2 class="hh">SCHOOL OF SCIENCES</h2><br>
+<a href="https://christuniversity.in/departments/bangalore%20bannerghatta%20road%20campus/school%20of%20business%20and%20management/business%20and%20%20management/festivals/blossoms,-blossoms-carnival,-inbloom" class="hero-btn"><img src="logo.png" class="logo2">
+</a>
+<br>
+<div class="launch-time">
+    <div>
+        <p id="days">00</p><br>
+        <span>Days</span>
+    </div>
+    <div>
+        <p id="hours">00</p><br>
+        <span>Hours</span>
+    </div>
+    <div>
+        <p id="minutes">00</p><br>
+        <span>Minutes</span>
+    </div>
+    <div>
+        <p id="seconds">00</p><br>
+        <span>Seconds</span>
+    </div>
+</div>
+<br>
+<CENTER>UNTIL FINALE</CENTER>
+</div>
+
+   </section>
+
+<!---intro-->
+<section class="intro" id="intro">
+    <h1 class="heading"><font color=black>Welcome To </font><span>BLOSSOMS '24 </span></h1>
+
+    <div class="row1">
+        <div class="video-container">
+            <video src="blossom.mp4" loop autoplay muted></video>
+            <h5>be the best</h5>
+        </div>
+
+        <div class="content">
+            <h4>About Blossoms...</h4>
+            <p><i><span>In the heart of Christ's vibrant hue,</span><br>
+               <span>Where talents bloom in a colorful brew,</span> <br>
+                <span>Art, stage, and words take flight anew,</span><br>
+                <span>In Blossoms' embrace, excellence rings true.</span></i></p>
+            <p><span>Blossoms is the intra-deanery cultural fest at Christ University with the motto</span><br>
+                 <span><i>‘Be the best’</i>. This is a unique venture where all 7000 students of Christ University,</span><br>
+                 <span> Bangalore participate in a cultural event. The events are divided into four <br></span>
+                  <span>categories - Art, Theatre, Stage & Literary. Students compete in multiple events<br> </span> 
+                  <span>across these categories. The winners lay their hands on the <br></span>  
+                  <span>Inter-Deanery Christ University  trophy for Artistic Excellence and Service.<br></span> </p>
+                <br><br>
+                
+            
+        </div>
+    </div>
+</section>
+
+<!---events-->
+<section id="create"><h1 class="heading5"><font color=white>Our Fest In A </font><span>Nutshell</span></h1>
+</section>
+
+    <section class="creator">
+    <div class="row">
+        <div class="creator-col">
+            <img src="Your paragraph text.png">
+            <div class="layer">
+                <h3>Painting<br>Pot Art<br>Poster Painting<br>Sketching<br>Greeting Card<br>Photography</h3>
+
+
+            </div>
+        </div>
+        <div class="creator-col">
+            <img src="Your paragraph text (1).png">
+            <div class="layer">
+                <h3>Indian Dance<br>Battle of Bands<br>Acapella<br>Mime<br><br></h3>
+
+                            </div>
+        </div>
+        <div class="creator-col">
+            <img src="Your paragraph text (2).png">
+            <div class="layer">
+                
+                <h3>Pot Pourri<br>Quiz<br>Extempore<br>Debate<br>Dumb Charades<br>JAM<br>Creative Writing</h3>
+
+            </div>
+        </div>
+        <div class="creator-col">
+            <img src="Your paragraph text (3).png">
+            <div class="layer">
+                <h3>Street Theatre<br>Proscenium<br>Mono Act<br><br><br></h3>
+            </div>
+        </div>
+        <div class="creator-col">
+            <img src="Your paragraph text (4).png">
+            <div class="layer">
+                <h3>The<br>Ultimate<br>Showdown<br><br><br></h3>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+    <br>
+    <div class="details">
+        <a style="text-decoration: none" href="event2.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
+        <a style="text-decoration: none" href="event3.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
+        <a style="text-decoration: none" href="event4.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
+        <a style="text-decoration: none" href="event1.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
+        <a style="text-decoration: none" href="interdean.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; details</button></a>
+
+
+    </div>
+<center><img src="c1.png" style="border:3px solid black;"></center>
+    </section>
+
+
+<section id="con">    <h1 class="heading"><font color=white>Get In Touch</font></h1>
+</section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5558789579045!2d77.6036138741369!3d12.936241415654447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15b277a93807%3A0x88518f37b39dabd0!2sChrist%20University!5e0!3m2!1sen!2sin!4v1696309940795!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+        <br>
+        <center><h4 style="font-size: 20px;">STUDENT CO-ORDINATORS</h4></center>
+<br>
+        <div class="contact">
+            <div class="box">
+                <p>ART</p>
+                <div>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Ajsal Ashraf&nbsp;&nbsp;6EMS<br><a href="https://wa.me/8588838474">+91 8089299700</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ajsal.ashraf@ems.christuniversity.in</a></p>
+                    </span>
+                    <i class="fa fa-id-card"></i>
+                    <span>
+                        <h5>Vignesh Narayanan&nbsp;&nbsp;4EMS<br><a href="https://wa.me/8588838474">+91 9994949377</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">vignesh.narayanan@ems.christuniversity.in</a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+               <p>STAGE</p> 
+                <div>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Ahlada Sriya&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9686696342</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ahlada.dharanipragada@bcb.christuniversity.in</a></p>
+                    </span>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Mary Jestina C&nbsp;&nbsp;4PCM<br><a href="https://wa.me/8588838474">+91 8951995205</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">mary.c@pcm.christuniversity.in</a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+                <p>THEATRE</p>
+                <div>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Pooja Prasad&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 7349448719</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">pooja.prasad@cbz.christuniversity.in</a></p>
+                    </span>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Bhuvaneshwari G M&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9141026778</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">bhuvaneshwari.gm@bcb.christuniversity.in</a></p>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="contact">
+          
+                <div class="box">
+                    <p>LITERARY</p>
+                    <div>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Phinehas Porpatham&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9962700738</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">phinehas.porpatham@cmschristuniversity.in</a></p>
+                        </span>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Dion Ajit&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9061391171</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">dion.ajit@cms.christuniversity.in</a></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>OVERALL</p>
+                    <div>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Prithika Narayanan&nbsp;&nbsp; 4CMS<br><a href="https://wa.me/8588838474">+91 9655444295</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">prithika.narayanan@cms.christuniversity.in</a></p>
+                        </span>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Manasa S&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 8310754413</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">manasa.s@cbz.christuniversity.in</a></p>
+                        </span>
+                    </div>
+                </div>
+                </div>
+            
+            
+        </div></section>
+
+
+
+
+
+
+<!---footer--->
+<section class="footer">
+    <img src="logo.png" class="logo1">
+    <p>-------------- Be The Best --------------<br>
+        <p>&copy; All rights reserved CHRIST (Deemed to be University), Department of Statistics and Data Science</p>
+        <div class="icons">
+    <a href="https://christuniversity.in/"><i class="fa fa-university"></i></a>
+    <a href="https://www.facebook.com/christ.university/"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/christ_university_bangalore/?hl=en"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/school/christ-university-bangalore/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+</div>
+<b><div class="name"><p>Made with  <i class="fa fa-heart-o"></i> by Asmita Mondal</p></div></b>
+        </section>
+
+<script>
+
+function formatNumber(num) {
+        return num < 10 ? "0" + num : num;
+    }
+
+    var countDownDate=new Date("March 15, 2024 00:00:04").getTime();
+    var x=setInterval(function(){
+        var now=new Date().getTime();
+        var distance=countDownDate-now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML=formatNumber(days);
+        document.getElementById("hours").innerHTML=formatNumber(hours);
+        document.getElementById("minutes").innerHTML=formatNumber(minutes);
+        document.getElementById("seconds").innerHTML=formatNumber(seconds);
+
+        if(distance<0){
+            clearInterval(x);
+
+        document.getElementById("days").innerHTML=formatNumber(0o0);
+        document.getElementById("hours").innerHTML=formatNumber(0o0);
+        document.getElementById("minutes").innerHTML=formatNumber(0o0);
+        document.getElementById("seconds").innerHTML=formatNumber(0o0);
+        }
+
+    },1000);
+
+    function toggleMenu() {
+        var navLinks = document.getElementById("navLinks");
+        if (navLinks.style.display === "block") {
+            navLinks.style.display = "none";
+        } else {
+            navLinks.style.display = "block";
+        }
+    }
+
+    function toggleDropdown() {
+        var dropdownContent = document.getElementById("registerDropdown");
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    }
+
+    document.addEventListener('click', function(e) {
+        var dropdown = document.getElementsByClassName('dropdown')[0];
+        if (!dropdown.contains(e.target)) {
+            var dropdownContent = document.getElementById("registerDropdown");
+            dropdownContent.style.display = "none";
+        }
+    });
+
+</script>
+
+
+</body>
+
+    
+</html>

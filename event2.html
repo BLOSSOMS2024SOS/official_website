@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Events</title>
+    <link rel="stylesheet" href="event1.css">
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cabin+Sketch:wght@700&family=Caveat:wght@600;700&family=Chakra+Petch&family=Poppins:wght@100;200;300;400;500;600;700&family=Yesteryear&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Shade&family=Cabin+Sketch:wght@700&family=Caveat:wght@600;700&family=Chakra+Petch&family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700&family=Yesteryear&display=swap" rel="stylesheet">
+    <script defer src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+background-color: #000000;    
+width: 100%;
+}
+
+/* Button */
+button {
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: rgb(102, 102, 102);
+}
+
+i {
+    color: gray;
+    font-size: 4em;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    background-color: #151010;
+  }
+  
+ ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-image: linear-gradient(180deg, #f58727 0%, #425b9f 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  }
+  .header{
+    height: 13vh;
+    width: 100%;
+    background: url(bgg1.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.pic1{
+    width:60%;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    padding-top: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+flex:1;
+text-align:right;
+}
+
+.logo{
+    width:190px;
+    padding-top: 15px;
+    cursor:pointer;
+    margin: 0;
+    margin-left: -75px;
+}
+.logo2{
+    width:180px;
+    cursor:pointer;
+    
+    }
+.text-box{
+    width:90%;
+    color:#ffffff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size:62px;
+    color:#ffffff;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:20px;
+    color:#ffffff;
+}
+.btn{
+    display:flex;
+    align-items: center;
+    padding:10px 20px;
+    border:0;
+    outline:0;
+    border-radius:5px;
+    background:#050505;
+    color:#fff;
+    font-weight:500;
+    cursor:pointer;
+    
+}
+.btn:hover{
+    display:flex;
+    align-items: center;
+    padding:10px 20px;
+    border:0;
+    outline:0;
+    border-radius:5px;
+    color:#361513;
+    background:#ffffff79;
+    font-weight:500;
+    cursor:pointer; 
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:#ffffff;
+    border: 2px solid #080808;
+    border-radius: 10px;
+    padding:12px 34px;
+    font-size:15px;
+    background:#511076;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border: 3px solid #581845;
+    background:#000000;
+    color:#fff;
+
+}
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 20px 0;
+    background:url(foot.png);
+    border-top: 1px solid black;
+    background-size: cover;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 12px;
+    color: #000000;
+}
+.icons .fa{
+    margin:0 10px;
+    cursor:pointer;
+    padding:12px 0;
+    text-decoration:none;
+}
+.fa-heart-o{
+    color:#f44336;
+}
+.logo1{
+    width:150px;
+    cursor:pointer;
+    padding-bottom: -20px;
+    justify-content: center;
+}
+.name p{
+    font-size: 15px;
+    font-family: Poppins;
+}
+/*----features----*/
+.features{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color:#023313;
+}
+p{
+    color:#0b0b0b;
+    font-size:18px;
+    line-height:22px;
+    padding:10px;
+    text-shadow: 2px 2px 4px #b3dfdf, -2px -2px 4px #f6f8f6;
+    font-weight: bold;
+
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    color:#023313;
+    margin-top: -50px;
+    
+}
+.row{
+    margin-top:2%;
+    display:flex;
+    justify-content:space-between;
+}
+.feature-col{
+    flex-basis: 31%;
+    text-align:center;
+    background: linear-gradient(rgba(255, 255, 255, 0.219),rgba(67, 65, 65, 0.263)),url(bgg6.jpg);
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition:1s;
+}
+h3{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+    color:#090909;
+    font-family: Bungee Shade;
+    background-color: #fbf9f9;
+    border-radius: 20px;
+    border: 2px solid black;
+
+
+}
+.feature-col:hover{
+box-shadow:0 0 20px 5px rgba(0,0,0,0.5);
+transform: translateY(-20px);
+}
+.btn1{
+    display:flex;
+    align-items: center;
+    padding:10px 20px;
+    border:0;
+    outline:0;
+    border-radius:5px;
+    background:#361513;
+    color:#fff;
+    font-weight:500;
+    cursor:pointer;
+    justify-content:space-between;
+}
+.rule{
+    border: 3px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.rule h3{
+    font-size: 20px;
+    font-weight: 600;
+    color:#023313;
+    margin-top: 10px;
+}
+ul {
+  list-style-type: disc; 
+}
+
+li {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 14px;
+}
+.contact-us{
+    width:80%;
+    margin:auto;
+}
+
+.contact div .fa{
+    font-size:28px;
+    color:#f8f6f7;
+    margin:10px;
+    margin-right:30px;
+}
+.contact div p{
+    padding:0;
+    font-size: 20px;
+    margin-bottom:5px;
+    color:#fbfafa;
+    font-weight:400;
+    text-shadow: -2px -2px 2px rgb(8, 8, 8),0 2px 5px #526f8f;
+}
+.contact div h5{
+    font-size: 16px;
+    margin-bottom:5px;
+    color:#060606;
+    font-weight:600;
+    }
+    
+.contact a {
+    text-decoration: none; 
+    color: #fdf9f9; 
+    font-size: 15px;
+}
+
+.contact a:hover {
+    text-decoration: none; 
+    color: #b0b27c; 
+}
+
+
+.contact .heading1{
+    text-align:center;
+    font-size:2.7rem;
+    color:#050505;
+    padding:1rem;
+    margin:2rem 0;
+    border: rgba(239, 58, 148, 0.05);
+
+ background:#a4d4bc42;
+
+}
+.contact .heading1 span{
+    color:#0a4d25a0;
+}
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.box{
+    border:2px solid black;
+    padding: 10px 10px;
+    width:400px;
+    height:300px;
+    margin:10px 20px;
+    background: url(bgg5.jpg);
+    background-size: cover;
+    background: linear-gradient(rgba(7, 117, 123, 0.626),rgb(194, 98, 3)),url(bgg5.jpg);
+
+}
+h4{
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+    color:#090909;
+    font-family: Bungee Shade;
+    background-color: #fbf9f9;
+    border-radius: 20px;
+    border: 2px solid black;
+    width:450px;
+}
+    </style>
+</head>
+<body>
+    <section class="header">
+   
+        <nav>
+
+        <a href="index.html"><img src="l.png" class="logo"></a>
+      
+        <a style="text-decoration: none" href="home.html"><button class="btn">BACK HOME</button></a>
+    
+    </nav>
+    </section>
+
+    <section class="features">
+        <h2>ART EVENTS</h2>
+        <p>Brushstrokes of brilliance, canvases that bloom: Immerse yourself in artistry, escape the gloom!</p>
+    <div class="row">
+        <div class="feature-col">
+            <h3>SKETCHING</h3>
+           <b><p>Lines that Speak: Unveiling the Artistry of Sketching.</p></b> 
+                <img src="p6.jpg" alt="Avatar" style="width:200px;height:205px;border-radius: 50% 50%">
+                <center>        <a style="text-decoration: none" href="sketch.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; rules</button></a>
+                </center>
+        </div>
+
+        <div class="feature-col">
+            <h3>POT ART/PAINTING</h3>
+            <p>Crafting Intricate Stories, One Pot at a Time.</p>
+                <img src="p3.png" alt="Avatar" style="width:200px;border-radius: 50% 50%">
+                <center>        <a style="text-decoration: none" href="Pot.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; rules</button></a>
+                </center>
+            </div>
+        <div class="feature-col">
+            <h3>POSTER PAINTING</h3>
+            <p>BillBoard Unleashed: Painting Dreams into Reality.</p>
+                <img src="i2.jpg" alt="Avatar" style="width:200px;height:205px;border-radius: 50% 50%">
+                <center>        <a style="text-decoration: none" href="Poster.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; rules</button></a>
+                </center>
+            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="feature-col">
+            <h3>PAINTING</h3>
+           <b><p>Brushing Dreams to Life: A Celebration of Colors and Creativity!</p></b> 
+                <img src="p1.jpg" alt="Avatar" style="width:200px;height:205px;border-radius: 50% 50%">
+                <center>        <a style="text-decoration: none" href="paint.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; rules</button></a>
+                </center>
+        </div>
+        <div class="feature-col">
+            <h3>GREETING CARD DESIGN</h3>
+            <p>Crafting Warmth: Artful Greetings for Every Occasion.</p>
+                <img src="p4.png" alt="Avatar" style="width:200px;border-radius: 50% 50%">
+                <center>        <a style="text-decoration: none" href="greet.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; rules</button></a>
+                </center>
+            </div>
+            <div class="feature-col">
+                <h3>PHOTOGRAPHY</h3>
+                <p>It's All About Capturing the Perfect Moment.</p>
+                    <img src="photo.png" alt="Avatar" style="width:200px;height:205px;border-radius: 50% 50%">
+                    <center>        <a style="text-decoration: none" href="photo.html"><button class="btn"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp; <i class="fa fa-eye" aria-hidden="true"></i> &nbsp;&nbsp; rules</button></a>
+                    </center>
+                </div>
+    </div>
+    </section>
+    <div class="container">
+        <br>
+        <div class="rule">
+            <h3><b>General Rules</b></h3><br>
+            <ul>
+                <li>Date and time to be decided by the Deanery.</li>
+                <li>Venue to be booked by the Deanery.</li>
+                <li>Themes for the prelims will be decided by the deanery.</li>   
+                <li>For prelims (Intra-deanery), all the materials to be brought by the students or provided by the
+                    deanery (like poster sheets, ivory sheets, pots, etc) as per the discretion of the deanery.</li>     
+                <li>Only for the finals, the materials will be provided by SWO, which will be conducted on 15th and
+                    16th March, 2024</li>        
+            </ul>                <br>
+
+        </div>
+
+        <br><br>
+        <center><h4><b>Student Co-ordinators</b></h4><br></center>
+        
+        <div class="contact">
+            <div class="box">
+                <p>ART</p>
+                <div>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Ajsal Ashraf&nbsp;&nbsp;6EMS<br><a href="https://wa.me/8588838474">+91 8089299700</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ajsal.ashraf@ems.christuniversity.in</a></p>
+                    </span>
+                    <i class="fa fa-id-card"></i>
+                    <span>
+                        <h5>Vignesh Narayanan&nbsp;&nbsp;4EMS<br><a href="https://wa.me/8588838474">+91 9994949377</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">vignesh.narayanan@ems.christuniversity.in</a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+               <p>STAGE</p> 
+                <div>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Ahlada Sriya&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9686696342</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">ahlada.dharanipragada@bcb.christuniversity.in</a></p>
+                    </span>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Mary Jestina C&nbsp;&nbsp;4PCM<br><a href="https://wa.me/8588838474">+91 8951995205</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">mary.c@pcm.christuniversity.in</a></p>
+                    </span>
+                </div>
+            </div>
+            <div class="box">
+                <p>THEATRE</p>
+                <div>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Pooja Prasad&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 7349448719</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">pooja.prasad@cbz.christuniversity.in</a></p>
+                    </span>
+                    <i class="fa fa-id-card"></i>  
+                    <span>
+                        <h5>Bhuvaneshwari G M&nbsp;&nbsp;4BCB<br><a href="https://wa.me/8588838474">+91 9141026778</a></h5>
+                        <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">bhuvaneshwari.gm@bcb.christuniversity.in</a></p>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="contact">
+          
+                <div class="box">
+                    <p>LITERARY</p>
+                    <div>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Phinehas Porpatham&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9962700738</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">phinehas.porpatham@cmschristuniversity.in</a></p>
+                        </span>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Dion Ajit&nbsp;&nbsp;4CMS<br><a href="https://wa.me/8588838474">+91 9061391171</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">dion.ajit@cms.christuniversity.in</a></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>OVERALL</p>
+                    <div>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Prithika Narayanan&nbsp;&nbsp; 4CMS<br><a href="https://wa.me/8588838474">+91 9655444295</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">prithika.narayanan@cms.christuniversity.in</a></p>
+                        </span>
+                        <i class="fa fa-id-card"></i>  
+                        <span>
+                            <h5>Manasa S&nbsp;&nbsp;4CBZ<br><a href="https://wa.me/8588838474">+91 8310754413</a></h5>
+                            <p><a href="mailto:prakriti.bhatt@msds.christuniversity.in">manasa.s@cbz.christuniversity.in</a></p>
+                        </span>
+                    </div>
+                </div>
+                </div>
+            
+            
+            
+        
+
+
+    <section class="footer">
+        <img src="logo.png" class="logo1">
+        <p>-------------- Be The Best --------------<br><br>
+            <p>&copy; All rights reserved CHRIST (Deemed to be University), Department of Statistics and Data Science</p>
+            <div class="icons">
+        <a href="https://christuniversity.in/"><i class="fa fa-university"></i></a>
+        <a href="https://www.facebook.com/christ.university/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/christ_university_bangalore/?hl=en"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/christ-university-bangalore/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a>
+    </div>
+  <div class="name">  <p>Made with  <i class="fa fa-heart-o"></i> by Asmita Mondal</p></div>
+            </section>
+    </body>
+
+    
+    </html>   
