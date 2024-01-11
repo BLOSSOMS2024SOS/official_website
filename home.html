@@ -83,7 +83,27 @@
 .show {
     display: block;
 }
+#custom-alert {
+      display: none;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 5px;
+    }
 
+    #custom-alert p {
+      margin: 0;
+    }
+
+    #custom-alert button {
+      background-color: #b3470e;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
 </style>
 
 
@@ -92,7 +112,11 @@
 
 
 <body>
-
+    <div id="custom-alert">
+        <p>This website looks better on laptops or larger screens. Please consider switching to a bigger screen for an optimal experience.</p>
+        <button onclick="closeCustomAlert()">OK</button>
+      </div>
+   <section class="header">
    <section class="header">
    
     <nav>
@@ -363,7 +387,31 @@
         </section>
 
 <script>
+ window.addEventListener('load', function() {
+      checkScreenSize();
+    });
 
+    window.addEventListener('resize', function() {
+      checkScreenSize();
+    });
+
+    function checkScreenSize() {
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      if (screenWidth < 768) { // Adjust this value based on your preferred screen width
+        openCustomAlert();
+      }
+    }
+
+    function openCustomAlert() {
+      var customAlert = document.getElementById('custom-alert');
+      customAlert.style.display = 'block';
+    }
+
+    function closeCustomAlert() {
+      var customAlert = document.getElementById('custom-alert');
+      customAlert.style.display = 'none';
+    }
 function formatNumber(num) {
         return num < 10 ? "0" + num : num;
     }
