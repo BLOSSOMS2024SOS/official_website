@@ -502,28 +502,28 @@ h3{
 }
 @media screen and (max-width: 768px) {
     .row {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center align cards */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .creator-col {
-        margin-left: 22px; /* Reset left margin to remove space */
-        margin-bottom: 20px; /* Adjust margin for space between cards */
+        margin-left: 25px; 
+        margin-bottom: 20px; 
     }
 
     .details {
-        flex-direction: column; /* Display buttons vertically */
-        align-items: center; /* Center align buttons */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .details a {
-        margin-bottom: 10px; /* Add space between buttons */
+        margin-bottom: 10px; 
     }
 }
 @media screen and (max-width: 768px) {
     #centeredImage {
-        max-width: 90%; /* Adjust maximum width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; 
+        height: auto; 
     }
 }
 /*----contact---*/
