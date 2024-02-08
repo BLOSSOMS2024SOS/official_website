@@ -363,6 +363,30 @@ padding-bottom: 3rem;
         height: 100%; /* Adjust video height for mobile */
     }
 }
+@media screen and (min-width: 991px) {
+    .intro .row1 .video-container {
+        width:70%;
+        height:100%;
+        object-fit:cover;
+        margin-left: 30px;
+    }
+
+    .intro .row1 .video-container video {
+        width: 90%; /* Adjust video width for mobile */
+        height: 100%; /* Adjust video height for mobile */
+    }
+    .intro .row1 .video-container h5{
+        position:absolute;
+        top:50%;
+        transform:translateY(90%);
+        font-size:2rem;
+        background:#fff;
+        width:90%;
+        padding:1rem 1rem;
+        text-align:center;
+        mix-blend-mode: screen;
+    }
+}
 .intro .row1 .content{
 flex:1 1 40rem;
 }
