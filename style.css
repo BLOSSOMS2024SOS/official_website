@@ -363,7 +363,7 @@ padding-bottom: 3rem;
     .intro .row1 .video-container h5{
         position:absolute;
         top:50%;
-        transform:translateY(40%);
+        transform:translateY(28%);
         font-size:2rem;
         background:#fff;
         width:80%;
