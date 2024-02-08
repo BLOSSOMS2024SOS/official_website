@@ -179,6 +179,16 @@
 
    </section>
 
+
+   <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>MEGA EVENTS ARE NOW LIVE!</h2>
+      <button onclick="redirectToPage()">Go to Events</button>
+    </div>
+  </div>
+
+       
 <!---intro-->
 <section class="intro" id="intro">
     <h1 class="heading"><font color=black>Welcome To </font><span>BLOSSOMS '24 </span></h1>
@@ -274,6 +284,11 @@
         </div>
     </div>
          <br><br>
+            <section id="mega"><h1 class="heading5"><font color=white>Mega Events </font><span>For Those Who Missed</span></h1>
+        <div class="new">
+           <a href="murder.html" ><img src="Murder Mystery (1).png" class="murder"></a>
+           <a href="minute.html"><img src="Murder Mystery.png" class="murder"></a> 
+        </div>
     <a href="https://forms.gle/erBzvHLot9EQdzoT9" style="color: #8ebf42"><h2 class="hh"> CLICK to Register for The Inter Deanery Dance Extravanganza Now!</h2><br></a>
 <br>
    <a href="https://forms.gle/erBzvHLot9EQdzoT9"><img src="ex1.png" style="border:3px solid black;width:650px;" id="centeredImage"></a> 
@@ -498,6 +513,23 @@ document.addEventListener('click', function(e) {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  // Show the popup on page load
+  showPopup();
+});
+
+function showPopup() {
+  document.getElementById('popup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+function redirectToPage() {
+    document.getElementById('popup').style.display = 'none';
+  window.location.href = '#mega';
+}
 
 
 </script>
