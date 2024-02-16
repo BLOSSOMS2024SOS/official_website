@@ -129,6 +129,7 @@
             <li class="menu hide-mobile"><a href="home.html">HOME</a></li>
             <li class="menu hide-mobile"><a href="#intro">ABOUT</a></li>
             <li class="menu hide-mobile"><a href="#create">EVENTS</a></li>
+                        <li class="menu hide-mobile"><a href="#create">RESULTS</a></li>
             <li class="dropdown" onclick="toggleDropdown()">
                 <span class="dropbtn">REGISTER</span>
                 <div class="dropdown-content" id="registerDropdown">
@@ -183,7 +184,7 @@
    <div id="popup" class="popup">
     <div class="popup-content">
       <span class="close" onclick="closePopup()">&times;</span>
-      <h2>MEGA EVENTS ARE NOW LIVE!</h2>
+      <h2>RESULTS ARE NOW LIVE!</h2>
       <button onclick="redirectToPage()">Go to Events</button>
     </div>
   </div>
@@ -528,7 +529,7 @@ function closePopup() {
 
 function redirectToPage() {
     document.getElementById('popup').style.display = 'none';
-  window.location.href = '#mega';
+  window.location.href = 'results.html';
 }
 
 
